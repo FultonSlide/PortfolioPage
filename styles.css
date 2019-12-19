@@ -2,10 +2,13 @@ header {
     background: url('img/white-building.jpg');
     background-size: cover;
     background-position: center;
-    min-height: 1000px;
+    min-height: 800px;
 }
 .title-logo {
-  max-width: 60vh;
+  max-width: 40rem;
+}
+.title-logo-wrapper {
+  margin: 4rem auto;
 }
 .section {
   padding-top: 4vw;
@@ -20,5 +23,8 @@ header {
 @media screen and (max-width: 670px){
   header{
     min-height: 500px;
+  }
+  .title-logo-wrapper {
+    margin: 1rem auto;
   }
 }
