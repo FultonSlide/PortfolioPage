@@ -6,4 +6,5 @@ $(document).ready(function(){
     $('.datepicker').datepicker();
     $('.tooltipped').tooltip();
     $('.scrollspy').scrollSpy();
+    $('.pushpin').pushpin();
   });
