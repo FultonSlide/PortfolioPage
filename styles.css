@@ -1,3 +1,11 @@
+body {
+  opacity: 1;
+  transition: 2s opacity;
+}
+body.fade {
+  opacity: 0;
+  transition: none;
+}
 .landing-parallax {
   height: 100vh;
 }
@@ -9,6 +17,10 @@
 }
 .title-logo-wrapper {
   margin: 4rem auto;
+}
+.headshot {
+  border-radius: 50%;
+  border: solid 5px;
 }
 .portfolio-parallax {
   height: 95vw;

@@ -15,7 +15,9 @@
   <title>William Qoro</title>
 </head>
 <body>
-
+  <script>
+    document.body.className = 'fade';
+  </script>
   <!-- navbar -->
   <header>
     <div class="parallax-container landing-parallax">
@@ -64,12 +66,14 @@
   <!-- Blurb -->
   <section class="container section scrollspy" id="blurb">
     <div class="row">
-      <div class="col s12 l2">
+      <div class="col s12 l4 headshot-wrapper">
+        <img src="img/headshot.jpg" alt="William Qoro" class="responsive-img headshot">
+      </div>
+      <div class="col s12 l2 offset-l1">
         <h2 class="teal-text text-lighten-1">Hi my names William Qoro!</h2>
       </div>
-      <div class="col s12 l8 offset-l2">
+      <div class="col s12 l4 offset-l1">
         <p class="flow-text teal-text text-lighten-1">A little about me...</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
       </div>
@@ -214,9 +218,15 @@
       <div class="container center-align">&copy; 2020 William Qoro</div>
     </div>
   </footer>
+  <script>
+    document.addEventListener("DOMContentLoaded", function(e) {
+      document.body.className = '';
+    });
+  </script>
   <!-- Compiled and minified JavaScript -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script src="app.js"></script>
   <script src="materialize.js"></script>
 </body>
 </html>
