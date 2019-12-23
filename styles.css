@@ -11,7 +11,7 @@ header {
   margin: 4rem auto;
 }
 .portfolio-parallax {
-  min-height: minmax(1000px, auto);
+  height: 95vw;
 }
 .portfolio-title {
   margin: 2rem auto;
