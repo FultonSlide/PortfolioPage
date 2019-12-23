@@ -1,11 +1,11 @@
-header {
-    background: url('img/white-building.jpg');
-    background-size: cover;
-    background-position: center;
-    min-height: 800px;
+.landing-parallax {
+  height: 100vh;
+}
+.landing-img {
+  height: 100vh;
 }
 .title-logo {
-  max-width: 40rem;
+  width: 40vw;
 }
 .title-logo-wrapper {
   margin: 4rem auto;
@@ -34,8 +34,8 @@ header {
   margin: 7rem auto;
 }
 @media screen and (max-width: 670px){
-  header{
-    min-height: 500px;
+  .title-logo {
+    width: 80vw;
   }
   .title-logo-wrapper {
     margin: 1rem auto;
