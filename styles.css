@@ -6,6 +6,8 @@ body.fade {
   opacity: 0;
   transition: none;
 }
+
+
 .landing-parallax {
   height: 100vh;
 }
@@ -18,12 +20,26 @@ body.fade {
 .title-logo-wrapper {
   margin: 4rem auto;
 }
+
+
+.headshot-wrapper {
+  margin-top: 10px;
+}
 .headshot {
   border-radius: 50%;
   border: solid 5px;
 }
+.blurb-lead-wrapper {
+  margin: 3rem 0px;
+  white-space: nowrap;
+}
+.blurb-lead {
+  margin: 0px 0px;
+}
+
+
 .portfolio-parallax {
-  height: 95vw;
+  height: 145vh;
 }
 .portfolio-title {
   margin: 2rem auto;
@@ -51,5 +67,11 @@ body.fade {
   }
   .title-logo-wrapper {
     margin: 1rem auto;
+  }
+  .portfolio-parallax {
+    height: 250vh;
+  }
+  .contact-alignment {
+    margin: 5rem 5rem;
   }
 }
