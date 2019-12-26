@@ -15,9 +15,9 @@
   <title>William Qoro</title>
 </head>
 <body>
-  <script>
+  <!-- <script>
     document.body.className = 'fade';
-  </script>
+  </script> -->
   <!-- navbar -->
   <header>
     <div class="parallax-container landing-parallax">
@@ -29,11 +29,13 @@
           <a href="" class="sidenav-trigger" data-target="mobile-menu">
             <i class="material-icons teal-text text-lighten-1">menu</i>
           </a>
-          <ul class="hide-on-med-and-down">
-            <li><a href="#portfolio" class="black-text text-lighten-1">Portfolio</a></li>
-            <li><a href="#about" class="black-text text-lighten-1">About me</a></li>
-            <li><a href="#contact" class="black-text text-lighten-1">Contact</a></li>
-          </ul>
+          <div class="hidden-slide">
+            <ul class="hide-on-med-and-down">
+              <li><a href="#portfolio" class="black-text text-lighten-1">Portfolio</a></li>
+              <li><a href="#about" class="black-text text-lighten-1">About me</a></li>
+              <li><a href="#contact" class="black-text text-lighten-1">Contact</a></li>
+            </ul>
+          </div>
           <ul class="right hide-on-med-and-down">
             <li>
               <a href="#" class="btn-floating btn-small transparent z-depth-0 tooltipped" data-tooltip="Instagram">
@@ -58,7 +60,7 @@
           </ul>
         </div>
       </nav>
-      <div class="center title-logo-wrapper">
+      <div class="center title-logo-wrapper hidden">
         <img src="img/logo_transparent_background.png" alt="William Qoro" class="title-logo">
       </div>
     </div>
@@ -89,7 +91,7 @@
         <h1 class="text-flow portfolio-title">Portfolio</h1>
         <p class="portfolio-title-follow flow-text">Projects</p>
       </div>
-      <div class="row">
+      <div class="row project-rows hidden">
         <div class="col s12 l4">
           <div class="project-image">
             <img src="img/hal-gatewood-tZc3vjPCk-Q-unsplash.jpg" alt="wireframes" class="responsive-img">
@@ -104,7 +106,7 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
         </div>
       </div>
-      <div class="row">
+      <div class="row project-rows hidden">
         <div class="col s12 l4 push-l7 offset-l1">
           <div class="project-image">
             <img src="img/ilya-pavlov-OqtafYT5kTw-unsplash.jpg" alt="wireframes" class="responsive-img">
@@ -119,7 +121,7 @@
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
         </div>
       </div>
-      <div class="row">
+      <div class="row project-rows hidden">
         <div class="col s12 l4">
           <div class="project-image">
             <img src="img/nasa-Q1p7bh3SHj8-unsplash.jpg" alt="wireframes" class="responsive-img">
@@ -216,11 +218,11 @@
     </div>
   </footer>
 
-  <script>
+  <!-- <script>
     document.addEventListener("DOMContentLoaded", function(e) {
       document.body.className = '';
     });
-  </script>
+  </script> -->
   <!-- Compiled and minified JavaScript -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>

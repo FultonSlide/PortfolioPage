@@ -7,6 +7,28 @@ body.fade {
   transition: none;
 }
 
+@keyframes fade-in {
+  from {opacity: 0; transform: scale(.7,.7)}
+  to {opacity: 1;}
+}
+@keyframes slide-right {
+  from {opacity: 0; transform: scale(.7,.7); transform: translateX(-30px)}
+  to {opacity: 1}
+}
+
+.fade-in-element {
+  animation: fade-in 1.4s;
+}
+.hidden {
+  opacity: 0;
+}
+.slide-in-element{
+  animation: slide-right 1.4s;
+}
+.hidden-slide{
+  opacity: 0;
+}
+
 /* Landing Section */
 .landing-parallax {
   height: 100vh;
