@@ -7,9 +7,10 @@ body.fade {
   transition: none;
 }
 
-
+/* Landing Section */
 .landing-parallax {
   height: 100vh;
+  position: relative;
 }
 .landing-img {
   height: 100vh;
@@ -18,12 +19,15 @@ body.fade {
   width: 40vw;
 }
 .title-logo-wrapper {
-  margin: 4rem auto;
+  margin: auto;
+  position: absolute;
+  top: 12vh;
+  left: 28vw;
 }
 
-
+/* Blurb section */
 .headshot-wrapper {
-  margin-top: 10px;
+  margin: 3rem 0px;
 }
 .headshot {
   border-radius: 50%;
@@ -31,15 +35,16 @@ body.fade {
 }
 .blurb-lead-wrapper {
   margin: 3rem 0px;
-  white-space: nowrap;
+  top: 50%;
 }
 .blurb-lead {
-  margin: 0px 0px;
+  margin: 0;
+  /* font-weight: lighter; */
 }
 
-
+/* Portfolio Section */
 .portfolio-parallax {
-  height: 145vh;
+  height: auto;
 }
 .portfolio-title {
   margin: 2rem auto;
@@ -48,9 +53,19 @@ body.fade {
 .portfolio-title-wrapper {
   margin-bottom: 4rem;
 }
+.project-btns {
+  text-align: center;
+  margin: 1rem 1rem;
+  white-space: nowrap;
+}
 .section {
   padding-top: 4vw;
   padding-bottom: 4vw;
+}
+
+/* About Me Section */
+.resume-btn {
+  text-align: center;
 }
 .tabs .indicator {
   background-color: #000;
@@ -60,17 +75,36 @@ body.fade {
 }
 .contact-alignment {
   margin: 7rem auto;
+  text-align: center;
+  white-space: nowrap;
 }
-@media screen and (max-width: 670px){
+.contact-alignment h5 {
+  text-align: left;
+}
+
+/* Small Screens */
+@media screen and (max-width: 993px){
+  /* Landing */
   .title-logo {
     width: 80vw;
   }
   .title-logo-wrapper {
-    margin: 1rem auto;
+    top: 7vh;
+    left: 10vw;
   }
-  .portfolio-parallax {
-    height: 250vh;
+
+  /* Blurb */
+  .headshot-wrapper img {
+    width: 30rem;
   }
+  .headshot-wrapper {
+    text-align: center;
+  }
+  .blurb-lead {
+    text-align: center;
+  }
+
+  /* Contact */
   .contact-alignment {
     margin: 5rem 5rem;
   }
