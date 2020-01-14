@@ -95,6 +95,29 @@ body.fade {
 .tabs .tab a:focus, .tabs .tab a:focus.active {
   background: transparent;
 }
+.devicon-wrapper {
+  text-align: center;
+}
+.devicon {
+  display: inline-block;
+  font-size: 100px;
+  margin: 3rem 1rem;
+}
+.devicon-edu {
+  display: inline-block;
+  font-size: 100px;
+  margin: 3rem 0.1rem;
+}
+.edu-wrapper {
+  margin: 2rem 0;
+}
+.education-title {
+  font-weight: bold;
+}
+.education-grad {
+  font-style: italic;
+  margin: 0;
+}
 .contact-alignment {
   margin: 7rem auto;
   text-align: center;
