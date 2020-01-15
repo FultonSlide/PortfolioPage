@@ -41,10 +41,13 @@ body.fade {
   width: 40vw;
 }
 .title-logo-wrapper {
-  margin: auto;
+  margin-top: 100px;
   position: absolute;
-  top: 12vh;
+  top: calc(420px - 20vw);
   left: 28vw;
+}
+.nav-btn {
+  font-weight: 500;
 }
 
 /* Blurb section */
@@ -56,12 +59,14 @@ body.fade {
   border: solid 5px;
 }
 .blurb-lead-wrapper {
-  margin: 3rem 0px;
-  top: 50%;
+  margin: 6rem 0px;
 }
 .blurb-lead {
   margin: 0;
   /* font-weight: lighter; */
+}
+.blurb-wrapper {
+  margin: 1rem 0;
 }
 
 /* Portfolio Section */
@@ -84,10 +89,20 @@ body.fade {
   padding-top: 4vw;
   padding-bottom: 4vw;
 }
+.project-image img {
+  border-radius: 10px;
+  transform: scale(1,1);
+  filter: sepia(0%);
+  transition: all 0.5s;
+}
+.project-image img:hover {
+  transform: scale(1.05,1.05);
+}
 
 /* About Me Section */
 .resume-btn {
   text-align: center;
+  margin: 2rem 0;
 }
 .tabs .indicator {
   background-color: #000;
@@ -119,12 +134,15 @@ body.fade {
   margin: 0;
 }
 .contact-alignment {
-  margin: 7rem auto;
+  margin: 5rem auto;
   text-align: center;
   white-space: nowrap;
 }
 .contact-alignment h5 {
   text-align: left;
+}
+.contact-alignment a {
+  color: black;
 }
 
 /* Small Screens */
@@ -134,7 +152,7 @@ body.fade {
     width: 80vw;
   }
   .title-logo-wrapper {
-    top: 7vh;
+    top: calc(260px - 20vw);
     left: 10vw;
   }
 
@@ -147,6 +165,14 @@ body.fade {
   }
   .blurb-lead {
     text-align: center;
+  }
+  .blurb-lead-wrapper{
+    text-align: center;
+    margin: 1rem 0px;
+  }
+  .blurb-lead-wrapper h1 {
+    display: inline;
+    margin: 0.2rem;
   }
 
   /* Contact */
